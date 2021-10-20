@@ -68,18 +68,53 @@ $faqs = [
         <div class="header_container">
             <div class="left_header">
                 <a href="#"><img src="./img/googlelogo_clr_74x24px.svg" alt="logo"><span>Privacy e termini</span></a>
+                <ul>
+                    <li>
+                        <a href="#">Introduzione</a>
+                        <a href="#">Norme sulla privacy</a>
+                        <a href="#">Termini di servizio</a>
+                        <a href="#">Tecnologie</a>
+                        <a class="active" href="#">Domande frequenti</a>
+                    </li>
+                </ul>
             </div>
             <div class="right_header">
+                <a href="#"><i class="fas fa-bars"></i></a>
                 <a href="#"><img src="https://lh3.googleusercontent.com/ogw/ADea4I7rtGMVyPG1H_bDjEsDF97SC-px-LkE4-sDTc4=s32-c-mo" alt="icon"></a>
             </div>
         </div>
     </header>
     <main>
-        <?php foreach($faqs as $elements) { ?>
-            <h2><?php echo $elements["domanda"] ?></h2>
-            <p><?php echo $elements["risposta"] ?></p>
-        <?php } ?>
+        <div class="main_container">
+            <?php foreach($faqs as $elements) { ?>
+                <h2><?php echo $elements["domanda"] ?></h2>
+                <p><?php echo $elements["risposta"] ?></p>
+            <?php } ?>
+        </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer_container">
+            <div class="footer_left">
+                <ul>
+                    <li>
+                        <a href="#">Google</a>
+                        <a href="#">Tutto su google</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Termini</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_right">
+                <select name="lang" id="lang">
+                    <option value="italiano">Italiano</option>
+                    <option value="inglese">Inglese</option>
+                    <option value="portoghese">Portoghese</option>
+                    <option value="spagnolo">Spagnolo</option>
+                    <option value="tedesco">Tedesco</option>
+                    <option value="francese">Francese</option>
+                </select>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
