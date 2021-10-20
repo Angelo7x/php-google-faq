@@ -13,6 +13,12 @@ body {
 header {
     padding: 20px;
     border-bottom: 1px solid gray;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    background-color: white;
 }
 
 .header_container {
@@ -74,6 +80,7 @@ header {
 .main_container {
     width: 70%;
     margin: auto;
+    padding-top: 200px;
 }
 
 .main_container h2 {
@@ -109,8 +116,4 @@ footer {
     padding-right: 25px;
     font-size: 15px;
     color: gray;
-}
-
-.footer_right {
-    
 }
